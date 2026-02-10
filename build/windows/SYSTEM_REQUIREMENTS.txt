@@ -1,0 +1,111 @@
+SYSTEM REQUIREMENTS - KEYBOARD MOUSE SHARE
+==========================================
+
+OPERATING SYSTEM
+----------------
+- Windows 11 (all versions) - RECOMMENDED
+- Windows 10 version 21H2 (build 19044+)
+- Windows 10 version 21H1 (build 19043+)
+- Windows 10 version 20H2 (build 19042+)
+- Windows 10 version 2004 (build 19041+)
+
+DO NOT INSTALL on:
+- Windows 10 version 1909 or earlier
+- Windows 8.1 or earlier
+- Windows Server editions
+
+
+HARDWARE
+--------
+CPU:
+  - Intel Core i5 or equivalent (2010+)
+  - AMD Ryzen or equivalent
+  - 64-bit processor required
+
+RAM:
+  - Minimum: 4 GB
+  - Recommended: 8 GB or more
+
+Storage:
+  - 500 MB free disk space for installation
+  - SSD recommended for better performance
+
+Network:
+  - Ethernet adapter or WiFi card (802.11n or later)
+  - LAN connectivity between devices
+  - Local network without WireGuard/VPN restrictions
+
+
+NETWORK SETUP
+-----------
+- All devices must be on the same local network (LAN)
+- No internet connection required for functionality
+- Firewall: Application uses ports 5353 (mDNS) and 12345 (input)
+- Router must allow mDNS (multicast DNS) traffic
+
+
+DEPENDENCIES (INCLUDED)
+-----------------------
+The installer includes all required libraries:
+- Python 3.11+ runtime (bundled)
+- PyQt5 - UI framework
+- pynput - Input simulation
+- zeroconf - mDNS service discovery
+- cryptography - TLS encryption
+
+NO ADDITIONAL SOFTWARE NEEDED
+
+
+PERMISSIONS
+-----------
+The application requires:
+- Administrator access for installation
+- Input device access for keyboard/mouse simulation
+- Network access for service discovery
+
+
+DISK SPACE
+----------
+Installation breakdown:
+- Application and dependencies: ~300 MB
+- Configuration and cache: ~50 MB
+- Recommended buffer: 150 MB
+
+Total recommended free space: 500 MB
+
+
+ANTIVIRUS COMPATIBILITY
+-----------------------
+Known compatible with:
+- Windows Defender
+- Avast
+- Norton
+- McAfee
+- Kaspersky
+
+If installation fails due to antivirus:
+1. Disable antivirus temporarily
+2. Run installer
+3. Add application folder to antivirus whitelist
+4. Re-enable antivirus
+
+
+SUPPORTED NETWORK TYPES
+-----------------------
+- Home Network
+- Work Network (LAN only)
+- VPN bypass (must be on same local subnet)
+
+NOT SUPPORTED:
+- Internet-only networks
+- Networks without mDNS support
+- Corporate networks with strict firewall
+
+
+TROUBLESHOOTING
+---------------
+If Windows Defender SmartScreen blocks installation:
+1. Click "More info"
+2. Click "Run anyway"
+
+This is expected for unsigned installers. Use official releases only.

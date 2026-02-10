@@ -1,0 +1,19 @@
+# Build requirements for creating Windows installer
+# Install with: pip install -r requirements-build.txt
+
+# PyInstaller - Convert Python application to standalone executable
+pyinstaller>=6.0.0
+
+# Existing application requirements (from requirements.txt)
+zeroconf>=0.68.0
+pynput>=1.7.6
+cryptography>=41.0.0
+PyQt5>=10.0
+
+# Development and testing (if building with test execution)
+pytest>=9.0.0
+pytest-cov>=4.0.0
+pytest-qt>=4.2.0
+
+# Code quality
+ruff>=0.3.0

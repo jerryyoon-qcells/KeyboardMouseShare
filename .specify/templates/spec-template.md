@@ -100,6 +100,27 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+## Security & Privacy Considerations *(mandatory per Constitution)*
+
+<!--
+  Per Keyboard Mouse Share Constitution Principle II (Network Security),
+  all features must address security implications.
+  
+  If this feature does NOT involve network communication or sensitive data,
+  state "N/A - [reason]". Otherwise, include specific security requirements.
+-->
+
+### Network Security
+- Does this feature transmit keyboard/mouse input or other sensitive data? **[Yes/No]**
+- If yes, encryption method required: **[e.g., TLS 1.3, etc.]**
+- Authentication/validation required: **[Yes/No - who/what must validate?]**
+- Security testing approach: **[e.g., penetration testing, fuzzing, threat modeling]**
+
+### Privacy & Data Handling
+- What personal/sensitive data does this feature handle? **[List or N/A]**
+- How is data retained/deleted? **[Retention policy]**
+- Are there compliance requirements? **[GDPR, local regulations, etc.]**
+
 ## Success Criteria *(mandatory)*
 
 <!--

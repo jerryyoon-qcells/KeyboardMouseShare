@@ -1,0 +1,110 @@
+<Window x:Class="KeyboardMouseShare.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Keyboard Mouse Share" Height="600" Width="900"
+        Background="#F5F5F5"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="500" MinWidth="700">
+    
+    <Grid Background="#F5F5F5">
+        <DockPanel>
+            <!-- Header -->
+            <Border DockPanel.Dock="Top" Background="#2E3440" Height="60" Padding="20">
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="Keyboard Mouse Share" 
+                              FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="v1.0.0 - Share keyboard and mouse across devices"
+                              FontSize="12" Foreground="#B0B0B0" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Main Content -->
+            <Grid DockPanel.Dock="Top" Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Device Info Section -->
+                <Border Grid.Column="0" Background="White" BorderThickness="1" BorderBrush="#D0D0D0" CornerRadius="4" Padding="20" Margin="0,0,10,0">
+                    <StackPanel>
+                        <TextBlock Text="This Device" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        
+                        <!-- Device Role -->
+                        <TextBlock Text="Device Role" FontSize="12" Foreground="#666"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
+                            <RadioButton x:Name="RoleMasterRadio" Content="Master (Keyboard Source)" 
+                                        VerticalAlignment="Center" Margin="0,0,15,0"/>
+                            <RadioButton x:Name="RoleClientRadio" Content="Client (Input Receiver)" 
+                                        VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <!-- Device Name -->
+                        <TextBlock Text="Device Name" FontSize="12" Foreground="#666" Margin="0,10,0,0"/>
+                        <TextBox x:Name="DeviceNameTextBox" Height="32" Padding="8" 
+                                Background="White" BorderThickness="1" BorderBrush="#D0D0D0"
+                                Margin="0,5,0,10"/>
+
+                        <!-- Status -->
+                        <TextBlock Text="Status" FontSize="12" Foreground="#666" Margin="0,10,0,0"/>
+                        <Border Background="#E8F5E9" BorderThickness="1" BorderBrush="#4CAF50" CornerRadius="2" Padding="8" Margin="0,5,0,0">
+                            <TextBlock x:Name="StatusTextBlock" Text="Ready" Foreground="#2E7D32" FontWeight="Bold"/>
+                        </Border>
+                    </StackPanel>
+                </Border>
+
+                <!-- Connected Devices Section -->
+                <Border Grid.Column="1" Background="White" BorderThickness="1" BorderBrush="#D0D0D0" CornerRadius="4" Padding="20">
+                    <StackPanel>
+                        <TextBlock Text="Connected Devices" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        
+                        <!-- Device List -->
+                        <ListBox x:Name="DeviceListBox" Height="150" Background="#FAFAFA" 
+                                BorderThickness="1" BorderBrush="#D0D0D0" Margin="0,5,0,10">
+                            <!-- Items will be populated at runtime -->
+                        </ListBox>
+
+                        <!-- Connection Controls -->
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                            <Button Content="Connect" Width="80" Height="32" 
+                                   Background="#2196F3" Foreground="White" 
+                                   Padding="8" Margin="0,0,5,0" Cursor="Hand"/>
+                            <Button Content="Disconnect" Width="80" Height="32" 
+                                   Background="#F44336" Foreground="White" 
+                                   Padding="8" Margin="5,0,0,0" Cursor="Hand"/>
+                            <Button Content="Discover" Width="80" Height="32" 
+                                   Background="#4CAF50" Foreground="White" 
+                                   Padding="8" Margin="5,0,0,0" Cursor="Hand"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <!-- Activity Log Section -->
+            <Border DockPanel.Dock="Bottom" Background="White" BorderThickness="1,1,1,0" 
+                   BorderBrush="#D0D0D0" Padding="20" Margin="20,0,20,20" Height="150">
+                <StackPanel>
+                    <TextBlock Text="Activity Log" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <ListBox x:Name="ActivityLogListBox" Background="#FAFAFA" 
+                            BorderThickness="1" BorderBrush="#D0D0D0" 
+                            Foreground="#333" FontSize="11" 
+                            ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Footer -->
+            <Border DockPanel.Dock="Bottom" Background="#ECF0F1" Height="40" Padding="20">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Ready to share input devices" Foreground="#333"/>
+                    <TextBlock Text=" | " Foreground="#999" Margin="10,0"/>
+                    <TextBlock x:Name="VersionTextBlock" Text="Version 1.0.0" Foreground="#999"/>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

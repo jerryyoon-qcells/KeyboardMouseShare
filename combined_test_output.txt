@@ -1,0 +1,447 @@
+﻿python : Could not find platform independent libraries <prefix>
+At line:1 char:24
++ ... PATH = "."; python -m pytest python/tests/ --cov=python/src --cov-rep ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not find ...raries <prefix> 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+...FFF.F................................................................ [ 14%]
+.................................................................F...... [ 29%]
+.....F.................................................................. [ 44%]
+........................................................................ [ 59%]
+........................................................................ [ 74%]
+.............................FFFF.....................F................. [ 88%]
+.E...EE.......................EE........F.............                   [100%]
+=================================== ERRORS ====================================
+___ ERROR at setup of TestDeviceListSelection.test_device_selection_signal ____
+file C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py, line 154: source code not available
+E       fixture 'qtbot' not found
+>       available fixtures: _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, config, cov, doctest_namespace, event_loop_policy, mock_config, mock_logger, monkeypatch, no_cover, pytestconfig, qapp, record_property, record_testsuite_property, record_xml_attribute, recwarn, sample_device_data, sample_layout_data, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, widget
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py:154
+_____ ERROR at setup of TestDeviceListActions.test_connect_button_clicked _____
+file C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py, line 218: source code not available
+E       fixture 'qtbot' not found
+>       available fixtures: _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, config, cov, doctest_namespace, event_loop_policy, mock_config, mock_logger, monkeypatch, no_cover, pytestconfig, qapp, record_property, record_testsuite_property, record_xml_attribute, recwarn, sample_device_data, sample_layout_data, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, widget
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py:218
+___ ERROR at setup of TestDeviceListActions.test_disconnect_button_clicked ____
+file C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py, line 234: source code not available
+E       fixture 'qtbot' not found
+>       available fixtures: _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, config, cov, doctest_namespace, event_loop_policy, mock_config, mock_logger, monkeypatch, no_cover, pytestconfig, qapp, record_property, record_testsuite_property, record_xml_attribute, recwarn, sample_device_data, sample_layout_data, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, widget
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_device_list_widget.py:234
+__ ERROR at setup of TestDialogIntegration.test_connect_device_dialog_signal __
+file C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_dialogs.py, line 186: source code not available
+E       fixture 'qtbot' not found
+>       available fixtures: _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, config, cov, doctest_namespace, event_loop_policy, mock_config, mock_logger, monkeypatch, no_cover, pytestconfig, qapp, record_property, record_testsuite_property, record_xml_attribute, recwarn, sample_device_data, sample_layout_data, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_dialogs.py:186
+_____ ERROR at setup of TestDialogIntegration.test_settings_dialog_signal _____
+file C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_dialogs.py, line 200: source code not available
+E       fixture 'qtbot' not found
+>       available fixtures: _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _session_scoped_runner, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, config, cov, doctest_namespace, event_loop_policy, mock_config, mock_logger, monkeypatch, no_cover, pytestconfig, qapp, record_property, record_testsuite_property, record_xml_attribute, recwarn, sample_device_data, sample_layout_data, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_dialogs.py:200
+================================== FAILURES ===================================
+_______ TestConnectionHandlerIntegration.test_message_with_json_payload _______
+
+self = <tests.integration.test_connection_tls.TestConnectionHandlerIntegration object at 0x000002D576402D70>
+tls_certs = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_message_with_json_payload0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_message_with_json_payload0\\key.pem')
+
+    def test_message_with_json_payload(self, tls_certs):
+        """Test sending complex JSON payload."""
+        cert_file, key_file = tls_certs
+        port = 20001
+    
+        test_data = {
+            "event_type": "KEY_PRESS",
+            "keycode": "A",
+            "modifiers": ["Shift", "Ctrl"],
+            "x": 100,
+            "y": 200,
+            "button": "left",
+            "nested": {
+                "key": "value",
+                "list": [1, 2, 3]
+            }
+        }
+    
+        received_data = {}
+        server_ready = threading.Event()
+    
+        def run_server():
+            try:
+                server = ConnectionHandler(port, cert_file, key_file)
+                if not server.listen(backlog=1):
+                    return
+    
+                server_ready.set()
+    
+                client = server.accept()
+                if client:
+                    msg = client.receive_message(timeout=5)
+                    if msg:
+                        received_data["msg"] = msg
+                    client.close()
+                server.close()
+            except Exception as e:
+                logger.error(f"Server error: {e}")
+    
+        server_thread = threading.Thread(target=run_server, daemon=True)
+        server_thread.start()
+    
+        # Wait for server to be listening
+        assert server_ready.wait(timeout=5), "Server did not start listening in time"
+        time.sleep(0.5)  # Increased delay for server initialization
+    
+        client = ConnectionHandler(port, cert_file, key_file)
+        try:
+            if client.connect("127.0.0.1", port, timeout=5):
+                client.send_message("INPUT_EVENT", test_data)
+        finally:
+            client.close()
+    
+        server_thread.join(timeout=5)
+    
+>       assert "msg" in received_data
+E       AssertionError: assert 'msg' in {}
+
+python\tests\integration\test_connection_tls.py:221: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.network.connection:connection.py:353 Socket error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+___________ TestConnectionHandlerIntegration.test_multiple_messages ___________
+
+self = <tests.integration.test_connection_tls.TestConnectionHandlerIntegration object at 0x000002D5763DEF90>
+tls_certs = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_multiple_messages0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_multiple_messages0\\key.pem')
+
+    def test_multiple_messages(self, tls_certs):
+        """Test sending multiple messages in sequence."""
+        cert_file, key_file = tls_certs
+        port = 20002
+    
+        received_messages = []
+        server_ready = threading.Event()
+    
+        def run_server():
+            try:
+                server = ConnectionHandler(port, cert_file, key_file)
+                if not server.listen(backlog=1):
+                    return
+    
+                server_ready.set()
+    
+                client = server.accept()
+                if client:
+                    for _ in range(3):
+                        msg = client.receive_message(timeout=5)
+                        if msg:
+                            received_messages.append(msg)
+                    client.close()
+                server.close()
+            except Exception as e:
+                logger.error(f"Server error: {e}")
+    
+        server_thread = threading.Thread(target=run_server, daemon=True)
+        server_thread.start()
+    
+        # Wait for server to be listening
+        assert server_ready.wait(timeout=5), "Server did not start listening in time"
+        time.sleep(0.2)
+    
+        client = ConnectionHandler(port, cert_file, key_file)
+        try:
+            if client.connect("127.0.0.1", port, timeout=5):
+                for i in range(3):
+                    client.send_message(f"MSG{i}", {"seq": i})
+        finally:
+            client.close()
+    
+        server_thread.join(timeout=5)
+    
+>       assert len(received_messages) == 3
+E       assert 0 == 3
+E        +  where 0 = len([])
+
+python\tests\integration\test_connection_tls.py:268: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.network.connection:connection.py:353 Socket error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR    src.network.connection:connection.py:353 Socket error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR    src.network.connection:connection.py:353 Socket error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+_________________ TestTLSHandshake.test_mutual_tls_handshake __________________
+
+self = <tests.integration.test_connection_tls.TestTLSHandshake object at 0x000002D5764A8E10>
+tls_certs = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_mutual_tls_handshake0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_mutual_tls_handshake0\\key.pem')
+
+    def test_mutual_tls_handshake(self, tls_certs):
+        """Test that TLS handshake completes successfully."""
+        cert_file, key_file = tls_certs
+        port = 20003
+    
+        handshake_complete = {"server": False, "client": False}
+        server_ready = threading.Event()
+    
+        def run_server():
+            try:
+                server = ConnectionHandler(port, cert_file, key_file)
+                if server.listen(backlog=1):
+                    server_ready.set()
+                    client = server.accept()
+                    if client and client.socket:
+                        handshake_complete["server"] = True
+                        client.close()
+                server.close()
+            except Exception as e:
+                logger.error(f"Server error: {e}")
+    
+        server_thread = threading.Thread(target=run_server, daemon=True)
+        server_thread.start()
+    
+        # Wait for server to be listening
+        assert server_ready.wait(timeout=5), "Server did not start listening in time"
+        time.sleep(0.2)
+    
+        client = ConnectionHandler(port, cert_file, key_file)
+        if client.connect("127.0.0.1", port, timeout=5):
+            handshake_complete["client"] = True
+        client.close()
+    
+        server_thread.join(timeout=5)
+    
+>       assert handshake_complete["server"] == True
+E       assert False == True
+
+python\tests\integration\test_connection_tls.py:312: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.network.connection:connection.py:212 Error during TLS wrap with ('127.0.0.1', 13309): ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+_________________ TestMessageProtocol.test_timestamp_included _________________
+
+self = <tests.integration.test_connection_tls.TestMessageProtocol object at 0x000002D5764A9450>
+tls_certs = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_timestamp_included0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_timestamp_included0\\key.pem')
+
+    def test_timestamp_included(self, tls_certs):
+        """Test that all messages include timestamp."""
+        cert_file, key_file = tls_certs
+        port = 20005
+    
+        received_messages = []
+        server_ready = threading.Event()
+    
+        def run_server():
+            try:
+                server = ConnectionHandler(port, cert_file, key_file)
+                if not server.listen(backlog=1):
+                    return
+    
+                server_ready.set()
+    
+                client = server.accept()
+                if client:
+                    msg = client.receive_message(timeout=5)
+                    if msg:
+                        received_messages.append(msg)
+                    client.close()
+                server.close()
+            except Exception as e:
+                logger.error(f"Server error: {e}")
+    
+        server_thread = threading.Thread(target=run_server, daemon=True)
+        server_thread.start()
+    
+        # Wait for server to be listening
+        assert server_ready.wait(timeout=5), "Server did not start listening in time"
+        time.sleep(0.2)
+    
+        client = ConnectionHandler(port, cert_file, key_file)
+        try:
+            if client.connect("127.0.0.1", port, timeout=5):
+                client.send_message("TEST", {"data": "value"})
+        finally:
+            client.close()
+    
+        server_thread.join(timeout=5)
+    
+>       assert len(received_messages) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+python\tests\integration\test_connection_tls.py:372: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.network.connection:connection.py:353 Socket error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+__________________ TestClientConnection.test_connect_timeout __________________
+
+self = <tests.unit.test_connection_handler.TestClientConnection object at 0x000002D577B26350>
+mock_ssl_class = <MagicMock name='SSLContext' id='3115867416496'>
+mock_socket_class = <MagicMock name='socket' id='3115867416832'>
+cert_files = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_connect_timeout0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_connect_timeout0\\key.pem')
+
+>   ???
+E   assert True == False
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\test_connection_handler.py:112: AssertionError
+__________________ TestConnectionClose.test_close_connection __________________
+
+self = <tests.unit.test_connection_handler.TestConnectionClose object at 0x000002D577B26C10>
+mock_ssl_class = <MagicMock name='SSLContext' id='3115869161520'>
+cert_files = ('C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_close_connection0\\cert.pem', 'C:\\Users\\jerry\\AppData\\Local\\Temp\\pytest-of-jerry\\pytest-46\\test_close_connection0\\key.pem')
+
+>   ???
+E   AttributeError: 'NoneType' object has no attribute 'close'
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\test_connection_handler.py:355: AttributeError
+____ TestConnectionStatusConnected.test_set_connected_updates_device_label ____
+
+self = <tests.unit.ui.test_connection_status_widget.TestConnectionStatusConnected object at 0x000002D577CD5810>
+widget = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D578441B50>
+
+>   ???
+E   AssertionError: assert 'TestPC' in 'None'
+E    +  where 'None' = <built-in method text of QLabel object at 0x000002D5784422A0>()
+E    +    where <built-in method text of QLabel object at 0x000002D5784422A0> = <PyQt5.QtWidgets.QLabel object at 0x000002D5784422A0>.text
+E    +      where <PyQt5.QtWidgets.QLabel object at 0x000002D5784422A0> = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D578441B50>.device_label
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_connection_status_widget.py:86: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.ui.widgets.connection_status:connection_status.py:152 Error setting connected state: setText(self, a0: Optional[str]): argument 1 has unexpected type 'Device'
+_____ TestConnectionStatusConnected.test_set_connected_updates_tls_status _____
+
+self = <tests.unit.ui.test_connection_status_widget.TestConnectionStatusConnected object at 0x000002D577CD5950>
+widget = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D5784432F0>
+
+>   ???
+E   AssertionError: assert 'TLS 1.3' in 'Not Connected'
+E    +  where 'Not Connected' = <built-in method text of QLabel object at 0x000002D578443800>()
+E    +    where <built-in method text of QLabel object at 0x000002D578443800> = <PyQt5.QtWidgets.QLabel object at 0x000002D578443800>.text
+E    +      where <PyQt5.QtWidgets.QLabel object at 0x000002D578443800> = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D5784432F0>.tls_status
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_connection_status_widget.py:101: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.ui.widgets.connection_status:connection_status.py:152 Error setting connected state: setText(self, a0: Optional[str]): argument 1 has unexpected type 'Device'
+____ TestConnectionStatusConnected.test_set_connected_sets_progress_to_100 ____
+
+self = <tests.unit.ui.test_connection_status_widget.TestConnectionStatusConnected object at 0x000002D577C7B230>
+widget = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D5788743B0>
+
+>   ???
+E   assert 0 == 100
+E    +  where 0 = <built-in method value of QProgressBar object at 0x000002D578874B00>()
+E    +    where <built-in method value of QProgressBar object at 0x000002D578874B00> = <PyQt5.QtWidgets.QProgressBar object at 0x000002D578874B00>.value
+E    +      where <PyQt5.QtWidgets.QProgressBar object at 0x000002D578874B00> = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D5788743B0>.connection_progress
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_connection_status_widget.py:115: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.ui.widgets.connection_status:connection_status.py:152 Error setting connected state: setText(self, a0: Optional[str]): argument 1 has unexpected type 'Device'
+_______ TestConnectionStatusConnected.test_set_connected_resets_metrics _______
+
+self = <tests.unit.ui.test_connection_status_widget.TestConnectionStatusConnected object at 0x000002D577C7B360>
+widget = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D578875490>
+
+>   ???
+E   assert 5 == 0
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_connection_status_widget.py:133: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.ui.widgets.connection_status:connection_status.py:152 Error setting connected state: setText(self, a0: Optional[str]): argument 1 has unexpected type 'Device'
+_ TestConnectionStatusStateTransitions.test_transition_connecting_to_connected _
+
+self = <tests.unit.ui.test_connection_status_widget.TestConnectionStatusStateTransitions object at 0x000002D577CD65D0>
+widget = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D578877530>
+
+>   ???
+E   AssertionError: assert 'Connected' in 'Connecting... (TLS Handshake)'
+E    +  where 'Connecting... (TLS Handshake)' = <built-in method text of QLabel object at 0x000002D578876B10>()
+E    +    where <built-in method text of QLabel object at 0x000002D578876B10> = <PyQt5.QtWidgets.QLabel object at 0x000002D578876B10>.text
+E    +      where <PyQt5.QtWidgets.QLabel object at 0x000002D578876B10> = <src.ui.widgets.connection_status.ConnectionStatusWidget object at 0x000002D578877530>.tls_status
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_connection_status_widget.py:349: AssertionError
+------------------------------ Captured log call ------------------------------
+ERROR    src.ui.widgets.connection_status:connection_status.py:152 Error setting connected state: setText(self, a0: Optional[str]): argument 1 has unexpected type 'Device'
+_________ TestDeviceListIntegration.test_polling_loop_updates_devices _________
+
+self = <tests.unit.ui.test_service_bridge.TestDeviceListIntegration object at 0x000002D577D6A060>
+bridge = <src.ui.service_bridge.UIServiceBridge object at 0x000002D57855F850>
+device_list_widget = <src.ui.widgets.device_list.DeviceListWidget object at 0x000002D578440050>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002D577EDBCE0>
+
+>   ???
+
+C:\Users\jerry\personal-project\keyboard-mouse-share\tests\unit\ui\test_service_bridge.py:153: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <Mock spec='DiscoveryService' id='3115870124896'>
+name = 'get_discovered_devices'
+
+    def __getattr__(self, name):
+        if name in {'_mock_methods', '_mock_unsafe'}:
+            raise AttributeError(name)
+        elif self._mock_methods is not None:
+            if name not in self._mock_methods or name in _all_magics:
+>               raise AttributeError("Mock object has no attribute %r" % name)
+E               AttributeError: Mock object has no attribute 'get_discovered_devices'
+
+..\..\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py:696: AttributeError
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.2-final-0 _______________
+
+Name                                         Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------
+python\src\__init__.py                           4      0   100%
+python\src\config.py                            51      8    84%   68-73, 81-82
+python\src\input\__init__.py                    13      0   100%
+python\src\input\event_applier.py              239     38    84%   208-209, 240, 246, 248, 250, 254, 260, 316-318, 325-328, 339, 343, 347, 356-358, 369, 373, 377, 386-388, 402-404, 420-422, 434-436, 476-477
+python\src\input\handler.py                     40      5    88%   66, 76, 86, 114-115
+python\src\input\macos.py                      128     92    28%   44, 61-93, 102-116, 137-156, 160-171, 175-186, 190-202, 206-219, 223-236, 240-253, 258-263
+python\src\input\windows.py                     94     29    69%   67-72, 96-98, 124, 135-136, 140-159, 173-174, 183, 196-197, 211-212
+python\src\logger.py                            37      4    89%   30, 33, 87-88
+python\src\main.py                              36      1    97%   111
+python\src\models\__init__.py                    1      0   100%
+python\src\models\connection.py                 34      0   100%
+python\src\models\device.py                     44      1    98%   92
+python\src\models\input_event.py                46      1    98%   86
+python\src\models\layout.py                     29      0   100%
+python\src\models\repositories.py              158     24    85%   138, 144-146, 172-175, 224, 235, 241-243, 263-266, 336-338, 349-355
+python\src\models\schema.py                     28      0   100%
+python\src\network\__init__.py                   1      0   100%
+python\src\network\connection.py               204     62    70%   58-63, 75-80, 101-102, 129-134, 166-168, 180-181, 188-190, 208-210, 216-230, 281-282, 286-288, 324-325, 332-333, 350-351, 355-357, 377-378
+python\src\network\device_communicator.py      129     25    81%   85-86, 106-110, 148-150, 169-170, 260-262, 317-318, 327-328, 343, 347, 351, 355-357
+python\src\network\discovery.py                171     29    83%   129-136, 253-256, 261-262, 286-305, 335-336, 346-347
+python\src\relay\__init__.py                     2      0   100%
+python\src\relay\input_relay.py                217     27    88%   129-132, 157-159, 208-209, 233, 239, 279, 313, 373-375, 389, 399-401, 431-432, 441-442, 469-471
+python\src\ui\dialogs.py                       140     32    77%   96-114, 140-142, 232-258
+python\src\ui\manager.py                       195    148    24%   61-80, 90-113, 138-145, 154-168, 177-193, 202-220, 232-243, 255-266, 279-290, 302-310, 319-326, 330-332, 341-371, 380-398
+python\src\ui\service_bridge.py                124     24    81%   110-111, 151-162, 167-168, 211-212, 223-227, 244, 249-250, 264-265, 274-275, 283-284
+python\src\ui\widgets\__init__.py                3      0   100%
+python\src\ui\widgets\connection_status.py     134     10    93%   173-174, 192-193, 223-224, 236-237, 256-257
+python\src\ui\widgets\device_list.py           106     29    73%   98-100, 161-165, 169-182, 186-199
+python\src\utils\__init__.py                     3      0   100%
+python\src\utils\constants.py                   29      0   100%
+python\src\utils\validators.py                  46      1    98%   161
+--------------------------------------------------------------------------
+TOTAL                                         2486    590    76%
+Coverage HTML written to dir htmlcov
+Required test coverage of 70% reached. Total coverage: 76.27%
+=========================== short test summary info ===========================
+FAILED python\tests\integration\test_connection_tls.py::TestConnectionHandlerIntegration::test_message_with_json_payload
+FAILED python\tests\integration\test_connection_tls.py::TestConnectionHandlerIntegration::test_multiple_messages
+FAILED python\tests\integration\test_connection_tls.py::TestTLSHandshake::test_mutual_tls_handshake
+FAILED python\tests\integration\test_connection_tls.py::TestMessageProtocol::test_timestamp_included
+FAILED python\tests\unit\test_connection_handler.py::TestClientConnection::test_connect_timeout
+FAILED python\tests\unit\test_connection_handler.py::TestConnectionClose::test_close_connection
+FAILED python\tests\unit\ui\test_connection_status_widget.py::TestConnectionStatusConnected::test_set_connected_updates_device_label
+FAILED python\tests\unit\ui\test_connection_status_widget.py::TestConnectionStatusConnected::test_set_connected_updates_tls_status
+FAILED python\tests\unit\ui\test_connection_status_widget.py::TestConnectionStatusConnected::test_set_connected_sets_progress_to_100
+FAILED python\tests\unit\ui\test_connection_status_widget.py::TestConnectionStatusConnected::test_set_connected_resets_metrics
+FAILED python\tests\unit\ui\test_connection_status_widget.py::TestConnectionStatusStateTransitions::test_transition_connecting_to_connected
+FAILED python\tests\unit\ui\test_service_bridge.py::TestDeviceListIntegration::test_polling_loop_updates_devices
+ERROR python\tests\unit\ui\test_device_list_widget.py::TestDeviceListSelection::test_device_selection_signal
+ERROR python\tests\unit\ui\test_device_list_widget.py::TestDeviceListActions::test_connect_button_clicked
+ERROR python\tests\unit\ui\test_device_list_widget.py::TestDeviceListActions::test_disconnect_button_clicked
+ERROR python\tests\unit\ui\test_dialogs.py::TestDialogIntegration::test_connect_device_dialog_signal
+ERROR python\tests\unit\ui\test_dialogs.py::TestDialogIntegration::test_settings_dialog_signal
+12 failed, 469 passed, 5 errors in 29.74s

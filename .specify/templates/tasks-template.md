@@ -240,6 +240,45 @@ With multiple developers:
 
 ---
 
+## Phase Checklists *(mandatory per Constitution Principle VI)*
+
+<!--
+  Per Keyboard Mouse Share Constitution Principle VI (Phase Checklists),
+  each development phase must include quality gates. These checklists
+  ensure consistent standards.
+-->
+
+### Specification Phase Completion Checklist
+- [ ] All user stories are clearly written from the user's perspective
+- [ ] Acceptance scenarios defined for each story  
+- [ ] Edge cases and error scenarios identified
+- [ ] Security & privacy considerations documented (per Constitution)
+- [ ] All requirements are testable and measurable
+- [ ] No "NEEDS CLARIFICATION" items remain (all resolved)
+- [ ] Success criteria are quantifiable and verifiable
+
+### Planning Phase Completion Checklist
+- [ ] Technical approach defined for each user story
+- [ ] Platform compatibility verified (Windows 10+, macOS 10.15+)
+- [ ] Dependencies researched and confirmed available
+- [ ] Data model designed (if applicable) and validated
+- [ ] API contracts/interfaces defined (if applicable)
+- [ ] Performance targets confirmed achievable
+- [ ] Security implementation approach reviewed (TLS 1.3, authentication, logging)
+- [ ] Test strategy defined (unit, integration, platform-specific)
+
+### Implementation Phase Completion Checklist
+- [ ] All tasks from tasks.md completed and committed
+- [ ] All tests passing (unit, integration, platform-specific)
+- [ ] Code coverage target met (70%+ on critical modules per Constitution)
+- [ ] Documentation updated (README, API docs, CHANGELOG, architecture diagrams)
+- [ ] Security review completed (network communication, input validation, logs)
+- [ ] Platform-specific testing done (Windows AND macOS)
+- [ ] Code review approval obtained
+- [ ] Ready for deployment/demo
+
+---
+
 ## Notes
 
 - [P] tasks = different files, no dependencies

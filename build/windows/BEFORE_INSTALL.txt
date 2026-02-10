@@ -1,0 +1,58 @@
+KEYBOARD MOUSE SHARE - INSTALLATION GUIDE
+==========================================
+
+SYSTEM REQUIREMENTS
+-------------------
+- Windows 11 or Windows 10 (build 19041 or later)
+- 64-bit processor and operating system
+- 500 MB free disk space
+- Network adapter for LAN connectivity
+- Administrator privileges for installation
+
+
+BEFORE YOU INSTALL
+------------------
+1. Ensure all other applications are closed
+2. Disable antivirus temporarily if installation fails (re-enable after)
+3. You may need to enter administrator credentials
+4. Connected devices must be on the same local network
+
+
+INSTALLATION STEPS
+------------------
+1. Run KeyboardMouseShare-Setup-1.0.0.exe
+2. Accept the license agreement
+3. Choose installation location (default recommended)
+4. Select optional components:
+   - Desktop shortcut (recommended)
+   - Startup launch (optional)
+5. Click Install
+6. Application will launch after installation
+
+
+FIREWALL CONFIGURATION
+---------------------
+Windows Defender Firewall may block the application. If prompted:
+- Click "Allow access" for both private and public networks
+- Or manually add the application through Firewall settings
+
+
+FIRST RUN
+---------
+The application requires a device name and role selection:
+- Master: Keyboard/mouse source device
+- Client: Device that receives input
+- Unassigned: Choose role on first launch
+
+See README.md for detailed configuration instructions.
+
+
+UNINSTALLATION
+--------------
+Use Windows Control Panel > Programs > Programs and Features
+Or run the uninstaller from the Start Menu
+
+
+SUPPORT
+-------
+For issues, visit: https://github.com/yourusername/keyboard-mouse-share
