@@ -1,0 +1,12 @@
+# Core dependencies
+zeroconf>=0.68.0
+pynput>=1.7.6
+cryptography>=41.0.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+ruff>=0.1.0
+black>=23.9.0
+mypy>=1.5.0

@@ -1,0 +1,29 @@
+# Ruff configuration for code linting and import sorting
+# This file is deprecated in favor of pyproject.toml [tool.ruff] section
+# Kept here for reference in case project uses separate ruff config
+
+line-length = 100
+target-version = "py311"
+
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # Pyflakes
+    "I",    # isort
+    "C",    # flake8-comprehensions
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+]
+
+ignore = [
+    "E501",  # line too long; black handles this
+    "W503",  # line break before binary operator
+]
+
+[isort]
+known-first-party = ["keyboard_mouse_share"]
+known-third-party = ["zeroconf", "pynput", "cryptography"]
+
+[per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/*" = ["F841"]

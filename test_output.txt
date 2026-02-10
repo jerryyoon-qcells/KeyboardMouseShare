@@ -1,0 +1,12 @@
+﻿python : Could not find platform independent libraries <prefix>
+At line:1 char:24
++ ... PATH = "."; python -m pytest python/tests/unit/ --cov=python/src --co ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not find ...raries <prefix> 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+..............F...........F............................................. [ 19%]
+........................................................................ [ 39%]
+........................................................................ [ 59%]
+..........................................

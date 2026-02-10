@@ -27,6 +27,24 @@
 **Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
+## Platform Compatibility *(mandatory per Constitution Principle III)*
+
+<!--
+  Per Keyboard Mouse Share Constitution Principle III (Cross-Platform Compatibility),
+  all features must explicitly address Windows and macOS support.
+-->
+
+**Supported Platforms**: 
+- [ ] Windows 10+
+- [ ] macOS 10.15+ (Intel & Apple Silicon)
+
+**Platform-Specific Considerations**:
+- **Windows**: [e.g., use `pynput` for input handling, WinAPI for low-level keyboard hooks]
+- **macOS**: [e.g., use Quartz Event Services, check code-signing for system access]
+- **Shared Abstraction**: [How will platform-specific code be isolated and abstracted?]
+- **Testing Strategy**: [How will each platform be tested? Real hardware or CI emulation?]
+- **Known Limitations**: [e.g., "macOS requires Accessibility permissions in System Preferences"]
+
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
